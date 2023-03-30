@@ -1,4 +1,4 @@
-[![Vue Query logo](./media/vue-query.png)](https://damianosipiuk.github.io/vue-query/)
+[![Vue Query logo](./docs/public/vue-query.png)]
 
 [![npm version](https://img.shields.io/npm/v/vue-query)](https://www.npmjs.com/package/vue-query)
 [![npm license](https://img.shields.io/npm/l/vue-query)](https://github.com/DamianOsipiuk/vue-query/blob/main/LICENSE)
