@@ -29,7 +29,10 @@ export default defineConfig({
           { text: 'Overview', link: '/guide/overview.md' },
           { text: 'Installation', link: '/guide/installation.md' },
           { text: 'Quick start', link: '/guide/quick-start.md' },
-          { text: 'DevTools', link: '/guide/devTools.md'}
+          { text: 'DevTools', link: '/guide/devTools.md' },
+          {
+            text: 'TypeScript', link: '/guide/typeScript.md'
+          }
         ]
       }
     ],
