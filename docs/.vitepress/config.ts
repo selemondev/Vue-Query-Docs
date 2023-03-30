@@ -27,7 +27,8 @@ export default defineConfig({
         text: 'Guide',
         items: [
           { text: 'Overview', link: '/guide/overview.md' },
-          { text: 'Installation', link: '/guide/installation.md' }
+          { text: 'Installation', link: '/guide/installation.md' },
+          { text: 'Quick start', link: '/guide/quick-start.md'}
         ]
       }
     ],
