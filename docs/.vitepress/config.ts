@@ -18,23 +18,34 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Guide', link: '/guide/overview.md' },
+      { text: 'Guide', link: '/getting-started/overview.md' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Guide',
+        text: 'Getting Started',
         items: [
-          { text: 'Overview', link: '/guide/overview.md' },
-          { text: 'Installation', link: '/guide/installation.md' },
-          { text: 'Quick start', link: '/guide/quick-start.md' },
-          { text: 'DevTools', link: '/guide/devTools.md' },
+          { text: 'Overview', link: '/getting-started/overview.md' },
+          { text: 'Installation', link: '/getting-started/installation.md' },
+          { text: 'Quick start', link: '/getting-started/quick-start.md' },
+          { text: 'DevTools', link: '/getting-started/devTools.md' },
           {
-            text: 'TypeScript', link: '/guide/typeScript.md'
+            text: 'TypeScript', link: '/getting-started/typeScript.md'
           }
         ]
-      }
+      },
+
+      {
+        text: 'Guides & Concepts',
+        items: [
+          { text: 'Important defaults', link: '/guide/important-defaults.md' },
+          { text: 'Queries', link: '/guide/queries.md' },
+          { text: 'Query Keys', link: '/guide/query-keys.md'}
+        ]
+      },
+
+
     ],
 
     socialLinks: [

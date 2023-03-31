@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /guide/overview.md
+      link: /getting-started/overview.md
     - theme: alt
       text: View on Github
       link: https://github.com/DamianOsipiuk/vue-query
