@@ -41,7 +41,8 @@ export default defineConfig({
         items: [
           { text: 'Important defaults', link: '/guide/important-defaults.md' },
           { text: 'Queries', link: '/guide/queries.md' },
-          { text: 'Query Keys', link: '/guide/query-keys.md'}
+          { text: 'Query Keys', link: '/guide/query-keys.md' },
+          { text: 'Query Functions', link: '/guide/query-functions.md'}
         ]
       },
 
