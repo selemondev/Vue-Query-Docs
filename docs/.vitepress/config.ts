@@ -42,7 +42,8 @@ export default defineConfig({
           { text: 'Important defaults', link: '/guide/important-defaults.md' },
           { text: 'Queries', link: '/guide/queries.md' },
           { text: 'Query Keys', link: '/guide/query-keys.md' },
-          { text: 'Query Functions', link: '/guide/query-functions.md'}
+          { text: 'Query Functions', link: '/guide/query-functions.md' },
+          { text: 'Parallel Queries', link: '/guide/parallel-queries.md'}
         ]
       },
 
