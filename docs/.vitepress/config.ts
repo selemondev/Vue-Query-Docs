@@ -53,7 +53,9 @@ export default defineConfig({
           { text: 'Infinite Queries', link: '/guide/infinite-queries.md' },
           { text: 'Placeholder Query Data', link: '/guide/placeholder-query-data.md' },
           { text: 'Initial Query Data', link: '/guide/initial-query-data.md' },
-          { text: 'Prefetching', link: '/guide/prefetching.md'}
+          { text: 'Prefetching', link: '/guide/prefetching.md' },
+          { text: 'Mutations', link: '/guide/mutations.md' },
+          { text: 'Custom Clients ( Experimental ) ', link: '/guide/custom-clients.md'}
         ]
       },
 
