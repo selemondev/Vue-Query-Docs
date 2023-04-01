@@ -52,7 +52,8 @@ export default defineConfig({
           { text: 'Pagination Queries', link: '/guide/pagination-queries.md' },
           { text: 'Infinite Queries', link: '/guide/infinite-queries.md' },
           { text: 'Placeholder Query Data', link: '/guide/placeholder-query-data.md' },
-          { text: 'Initial Query Data', link: '/guide/initial-query-data.md'}
+          { text: 'Initial Query Data', link: '/guide/initial-query-data.md' },
+          { text: 'Prefetching', link: '/guide/prefetching.md'}
         ]
       },
 
