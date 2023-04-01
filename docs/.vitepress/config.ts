@@ -48,7 +48,8 @@ export default defineConfig({
           { text: 'Background Fetching Indicators', link: '/guide/background-fetching-indicators.md' },
           { text: 'Window Focus Refetching', link: '/guide/window-focus-refetching.md' },
           { text: 'Disabling Queries', link: '/guide/disabling-queries.md'},
-          { text: 'Query Retries', link: '/guide/query-retries.md'}
+          { text: 'Query Retries', link: '/guide/query-retries.md' },
+          { text: 'Pagination Queries', link: '/guide/pagination-queries.md'}
         ]
       },
 
