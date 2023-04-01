@@ -13,7 +13,7 @@ The `unique key` you provide is used internally for refetching, caching, and sha
 
 The query results returned by `useQuery` contains all the information about the query that you'll need for templating and any other usage of the data:
 
-```ts
+```js
 const result = useQuery("todos", fetchTodoList);
 ```
 

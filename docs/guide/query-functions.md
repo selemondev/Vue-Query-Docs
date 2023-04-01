@@ -8,7 +8,7 @@ A query function can be literally any function that `returns a promise`. The pro
 
 All of the following are valid query function configurations:
 
-```ts
+```js
 useQuery(["todos"], fetchAllTodos);
 useQuery(["todos", todoId], () => fetchTodoById(todoId));
 useQuery(["todos", todoId], async () => {
@@ -22,7 +22,7 @@ useQuery(["todos", todoId], ({ queryKey }) => fetchTodoById(queryKey[1]));
 
 In order for Vue Query to identify an error in a query, the query function must throw an error. Any error thrown in the query function will be saved in the `error` state of the query.
 
-```ts
+```js
 const { error } = useQuery(["todos", todoId], async () => {
   if (somethingGoesWrong) {
     throw new Error("Oh no!");
@@ -36,7 +36,7 @@ const { error } = useQuery(["todos", todoId], async () => {
 
 While most utilities like `axios` or `graphql-request` automatically throw errors for unsuccessful HTTP calls, some utilities like `fetch` do not throw errors by default. If that's the case, you'll need to throw them on your own. Here is a simple way to do that with the popular `fetch` API:
 
-```ts
+```js
 useQuery(["todos", todoId], async () => {
   const response = await fetch("/todos/" + todoId);
   if (!response.ok) {
@@ -50,7 +50,7 @@ useQuery(["todos", todoId], async () => {
 
 Query keys not only serve the purpose of uniquely identifying the data you are retrieving but are also conveniently passed into your query function. Although not always required, this allows for the extraction of your query functions if needed.
 
-```ts
+```js
 function useTodos(status, page) {
   const result = useQuery(["todos", { status, page }], fetchTodoList);
 }
@@ -67,7 +67,7 @@ function fetchTodoList({ queryKey }) {
 
 You can express the same configuration using an object wherever the `[queryKey, queryFn, config]` signature is supported in Vue Query's API.
 
-```ts
+```js
 import { useQuery } from "vue-query";
 
 useQuery({

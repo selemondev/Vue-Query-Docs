@@ -6,7 +6,7 @@
 
 When the number of parallel queries does not change, there is no extra effort to use parallel queries. Just use any number of Vue Query's `useQuery` and `useInfiniteQuery` hooks side-by-side!
 
-```ts
+```js
 // The following queries will execute in parallel
 const usersQuery = useQuery('users', fetchUsers)
 const teamsQuery = useQuery('teams', fetchTeams)
@@ -24,7 +24,7 @@ When the number of queries that need to be performed within a component changes 
 
 `useQueries` accepts an array of query options objects and returns a reactive array of query results:
 
-```ts
+```js
 const users = computed(...)
 const usersQueriesOptions = computed(() => users.value.map(user => {
     return {
