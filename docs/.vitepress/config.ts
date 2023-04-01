@@ -50,7 +50,9 @@ export default defineConfig({
           { text: 'Disabling Queries', link: '/guide/disabling-queries.md'},
           { text: 'Query Retries', link: '/guide/query-retries.md' },
           { text: 'Pagination Queries', link: '/guide/pagination-queries.md' },
-          { text: 'Infinite Queries', link: '/guide/infinite-queries.md'}
+          { text: 'Infinite Queries', link: '/guide/infinite-queries.md' },
+          { text: 'Placeholder Query Data', link: '/guide/placeholder-query-data.md' },
+          { text: 'Initial Query Data', link: '/guide/initial-query-data.md'}
         ]
       },
 
