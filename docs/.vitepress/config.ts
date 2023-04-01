@@ -44,7 +44,8 @@ export default defineConfig({
           { text: 'Query Keys', link: '/guide/query-keys.md' },
           { text: 'Query Functions', link: '/guide/query-functions.md' },
           { text: 'Parallel Queries', link: '/guide/parallel-queries.md'},
-          { text: 'Dependent Queries', link: '/guide/dependent-queries.md'}
+          { text: 'Dependent Queries', link: '/guide/dependent-queries.md'},
+          { text: 'Background Fetching Indicators', link: '/guide/background-fetching-indicators.md'}
         ]
       },
 
