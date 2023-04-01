@@ -9,7 +9,7 @@ The simplest form of a key is actually not an array, but an individual string. W
 - Generic list / Index resources.
 - Non-hierarchical resources
 
-```ts
+```js
 // A list of todos
 useQuery('todos', ...) // queryKey === ['todos']
 
@@ -27,7 +27,7 @@ When a query needs more information to uniquely describe its data, you can use a
   - It's common to pass an object of additional options
 
 
-```ts
+```js
 // An individual todo
 useQuery(['todo', 5], ...)
 // queryKey === ['todo', 5]
@@ -45,7 +45,7 @@ useQuery(['todos', { type: 'done' }], ...)
 To ensure that your query key parameter can change over time within the same component, pass each query key parameter as a `ref` or `computed` value.
 :::
 
-```ts
+```js
 const id = ref(5);
 useQuery(['todo', id], ...)
 ```
@@ -54,7 +54,7 @@ useQuery(['todo', id], ...)
 
 This means that no matter the order of keys in objects, all of the following queries are considered `equal`:
 
-```ts
+```js
 useQuery(['todos', { status, page }], ...)
 useQuery(['todos', { page, status }], ...)
 useQuery(['todos', { page, status, other: undefined }], ...)
@@ -62,7 +62,7 @@ useQuery(['todos', { page, status, other: undefined }], ...)
 
 However, it is important to note that the following query keys `are not equal` as the order of array items is significant.
 
-```ts
+```js
  useQuery(['todos', status, page], ...)
  useQuery(['todos', page, status], ...)
  useQuery(['todos', undefined, page, status], ...)
@@ -72,7 +72,7 @@ If your query function depends on a variable, include it in your query key.
 
 Since query keys uniquely describe the data they are fetching, they should include any variables you use in your query function that change. For example:
 
-```ts
+```js
 function useTodos(todoId) {
   const queryKey = ["todos", todoId];
   const result = useQuery(queryKey, () => fetchTodoById(todoId.value));

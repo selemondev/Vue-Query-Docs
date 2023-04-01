@@ -22,7 +22,7 @@ If you are using Vue 2.x, make sure to also setup [@vue/composition-api](https:/
 
 Before you start using Vue Query, you need to initialize it using `VueQueryPlugin` as shown below:
 
-```ts
+```js
 import { VueQueryPlugin } from "vue-query";
 
 app.use(VueQueryPlugin);
