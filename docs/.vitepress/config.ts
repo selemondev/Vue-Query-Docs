@@ -46,7 +46,8 @@ export default defineConfig({
           { text: 'Parallel Queries', link: '/guide/parallel-queries.md'},
           { text: 'Dependent Queries', link: '/guide/dependent-queries.md'},
           { text: 'Background Fetching Indicators', link: '/guide/background-fetching-indicators.md' },
-          { text: 'Window Focus Refetching', link: '/guide/window-focus-refetching.md'}
+          { text: 'Window Focus Refetching', link: '/guide/window-focus-refetching.md' },
+          { text: 'Disabling Queries', link: '/guide/disabling-queries.md'}
         ]
       },
 
