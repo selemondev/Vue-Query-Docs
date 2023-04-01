@@ -49,7 +49,8 @@ export default defineConfig({
           { text: 'Window Focus Refetching', link: '/guide/window-focus-refetching.md' },
           { text: 'Disabling Queries', link: '/guide/disabling-queries.md'},
           { text: 'Query Retries', link: '/guide/query-retries.md' },
-          { text: 'Pagination Queries', link: '/guide/pagination-queries.md'}
+          { text: 'Pagination Queries', link: '/guide/pagination-queries.md' },
+          { text: 'Infinite Queries', link: '/guide/infinite-queries.md'}
         ]
       },
 
