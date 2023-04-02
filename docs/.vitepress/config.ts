@@ -66,7 +66,8 @@ export default defineConfig({
           { text: 'Invalidation from mutations', link: '/guide/invalidation-from-mutations.md' },
           { text: 'Updates from mutation responses', link: '/guide/updates-from-mutation-responses.md' },
           { text: 'Optimistic updates', link: '/guide/optimistic-updates.md' },
-          { text: 'Query cancellation', link: '/guide/query-cancellation.md'},
+          { text: 'Query cancellation', link: '/guide/query-cancellation.md' },
+          { text: 'Scroll restoration', link: '/guide/scroll-restoration.md'},
           { text: 'Custom Clients ( Experimental ) ', link: '/guide/custom-clients.md'},
           { text: 'SSR & Nuxt.js ( Experimental )', link: '/guide/ssr-nuxt.md' },
           { text: 'Best Practices', link: '/guide/best-practices.md'}
