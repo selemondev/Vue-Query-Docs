@@ -72,6 +72,9 @@ export default defineConfig({
           },
           {
             text: 'Multi-page', link: '/examples/multi-page.md'
+          },
+          {
+            text: 'Suspense ( Experimental )', link: '/examples/suspense-experimental.md'
           }
         ]
       }
