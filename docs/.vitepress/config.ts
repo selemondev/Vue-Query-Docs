@@ -75,7 +75,8 @@ export default defineConfig({
           { text: 'Custom Clients ( Experimental ) ', link: '/guide/custom-clients.md'},
           { text: 'SSR & Nuxt.js ( Experimental )', link: '/guide/ssr-nuxt.md' },
           { text: 'Best Practices', link: '/guide/best-practices.md' },
-          { text: 'Does this replace ( Vuex, Pinia, etc) ?', link: '/guide/replace.md'}
+          { text: 'Does this replace ( Vuex, Pinia, etc) ?', link: '/guide/replace.md' },
+          { text: 'Migrating to Vue Query 2', link: '/guide/migration.md'}
         ]
       },
 
