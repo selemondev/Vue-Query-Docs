@@ -61,6 +61,15 @@ export default defineConfig({
         ]
       },
 
+      {
+        text: 'Examples',
+        items: [
+          {
+            text: 'Simple', link: '/examples/simple.md'
+          }
+        ]
+      }
+
 
     ],
 
