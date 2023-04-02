@@ -70,10 +70,12 @@ export default defineConfig({
           { text: 'Scroll restoration', link: '/guide/scroll-restoration.md' },
           { text: 'Filters', link: '/guide/filters.md' },
           { text: 'Caching', link: '/guide/caching.md' },
-          { text: 'Default query function', link: '/guide/default-query-function.md'},
+          { text: 'Default query function', link: '/guide/default-query-function.md' },
+          { text: 'Custom logger', link: '/guide/custom-logger.md'},
           { text: 'Custom Clients ( Experimental ) ', link: '/guide/custom-clients.md'},
           { text: 'SSR & Nuxt.js ( Experimental )', link: '/guide/ssr-nuxt.md' },
-          { text: 'Best Practices', link: '/guide/best-practices.md'}
+          { text: 'Best Practices', link: '/guide/best-practices.md' },
+          { text: 'Does this replace ( Vuex, Pinia, etc) ?', link: '/guide/replace.md'}
         ]
       },
 
