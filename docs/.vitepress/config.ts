@@ -66,6 +66,12 @@ export default defineConfig({
         items: [
           {
             text: 'Simple', link: '/examples/simple.md'
+          },
+          {
+            text: 'Basic', link: '/examples/basic.md'
+          },
+          {
+            text: 'Multi-page', link: '/examples/multi-page.md'
           }
         ]
       }
