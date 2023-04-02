@@ -21,7 +21,7 @@ const prefetchTodos = async () => {
 ## Manually priming a query
 
 Alternatively, if you already have the data for your query synchronously available, you don't need to prefetch it.
-You can just use the [Query Client's](https://tanstack.com/query/v3/#queryclientsetquerydata) `setQueryData` method to directly add or update a query's cached result by key.
+You can just use the `Query Client's` `setQueryData` method to directly add or update a query's cached result by key.
 
 ```js
 queryClient.setQueryData("todos", todos);

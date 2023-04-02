@@ -128,7 +128,7 @@ const { refetch } = useProjectsInfiniteQuery();
 refetch({ refetchPage: (page, index) => index === 0 });
 ```
 
-You can also pass this function as part of the 2nd argument (`queryFilters`) to [queryClient.refetchQueries](https://tanstack.com/query/v3/#queryclientrefetchqueries), [queryClient.invalidateQueries](https://tanstack.com/query/v3/#queryclientinvalidatequeries) or [queryClient.resetQueries](https://tanstack.com/query/v3/#queryclientresetqueries).
+You can also pass this function as part of the 2nd argument (`queryFilters`) to `queryClient.refetchQueries`, `queryClient.invalidateQueries` or `queryClient.resetQueries`
 
 ## Signature
 

@@ -4,10 +4,10 @@ If you ever want to disable a query from automatically running, you can use the 
 
 When `enabled` is `false`: 
 
-- If the query has cached data
+- If the query has cached data:
   - The query will be initialized in the `status === 'success'` or `isSuccess` state.
 
-- If the query does not have cached data
+- If the query does not have cached data:
   - The query will start in the `status === 'idle'` or `isIdle` state.
 
 - The query will not automatically fetch on mount.
