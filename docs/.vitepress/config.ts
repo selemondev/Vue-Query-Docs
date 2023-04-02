@@ -55,7 +55,8 @@ export default defineConfig({
           { text: 'Initial Query Data', link: '/guide/initial-query-data.md' },
           { text: 'Prefetching', link: '/guide/prefetching.md' },
           { text: 'Mutations', link: '/guide/mutations.md' },
-          { text: 'Custom Clients ( Experimental ) ', link: '/guide/custom-clients.md'}
+          { text: 'Custom Clients ( Experimental ) ', link: '/guide/custom-clients.md'},
+          { text: 'SSR & Nuxt.js ( Experimental )', link: '/guide/ssr-nuxt.md'}
         ]
       },
 
