@@ -4,6 +4,8 @@
 
 `Posts.vue` component is responsible for rendering a list of posts. It uses the useQuery hook to fetch all posts from `https://jsonplaceholder.typicode.com/posts`. The fetcher function is an async function that returns an array of posts. The component returns the same isLoading, isError, isFetching, data, and error properties as the Post.vue component. The component also accepts a `prop isVisited` which is a function that takes a `post id` as an argument and returns a boolean indicating if the post has been visited before. The component renders a list of post titles with a link to view the full post. The visited class is applied to the link if isVisited returns true for the post. The `refetch` property provided by the useQuery hook can be used to refetch the data manually.
 
+[View source](https://github.com/DamianOsipiuk/vue-query/tree/main/examples/2.x-basic)
+
 ::: code-group
 
 ```ts [src/main.ts]
