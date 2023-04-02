@@ -1,4 +1,4 @@
-# Custom clients (experimental)
+# Custom client
 
 ## Custom client
 
@@ -27,7 +27,7 @@ const vueQueryPluginOptions: VueQueryPluginOptions = {
 app.use(VueQueryPlugin, vueQueryPluginOptions);
 ```
 
-## Custom context keys
+## Custom context key
 
 You can also customize the key under which `QueryClient` will be accessible in the Vue context. This can be useful if you want to avoid name clashing between multiple apps on the same page.
 

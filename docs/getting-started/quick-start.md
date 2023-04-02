@@ -4,7 +4,7 @@ This example very briefly illustrates the 3 core concepts of Vue Query:
 
 - [Queries](/guide/queries.md)
 - [Mutations](/guide/mutations.md)
-- [Query Invalidation](/guide/infinite-queries.md)
+- [Query Invalidation](/guide/query-invalidation.md)
 
 ```vue
 <script setup>
