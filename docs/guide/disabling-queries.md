@@ -43,3 +43,28 @@ const { isIdle, isError, data, error, isFetching, refetch } = useTodosQuery({
   </div>
 </template>
 ```
+
+Permanently disabling a query opts out of many great features that react-query has to offer (like background refetches), and it's also not the idiomatic way. It takes you from the declartive approach (defining dependencies when your query should run) into an imperative mode (fetch whenever I click here). It is also not possible to pass parameters to refetch. Oftentimes, all you want is a lazy query that defers the initial fetch:
+
+## Lazy queries
+
+The `enabled` option can not only be used to permenantly disable a query, but also to enable / disable it at a later time. A good example would be a filter form where you only want to fire off the first request once the user has entered a filter value:
+
+```vue
+<script setup>
+import { useQuery } from "vue-query";
+
+const filter = ref("");
+const isEnabled = computed(() => !!filter.value);
+const { data } = useQuery(
+  ["todos", filter],
+  fetchTodoList,
+  // ⬇️ disabled as long as the filter is empty
+  { enabled: isEnabled }
+);
+</script>
+
+<template>
+  <span v-if="data">Filter was set and data is here!</span>
+</template>
+```
