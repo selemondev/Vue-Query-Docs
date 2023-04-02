@@ -56,7 +56,8 @@ export default defineConfig({
           { text: 'Prefetching', link: '/guide/prefetching.md' },
           { text: 'Mutations', link: '/guide/mutations.md' },
           { text: 'Custom Clients ( Experimental ) ', link: '/guide/custom-clients.md'},
-          { text: 'SSR & Nuxt.js ( Experimental )', link: '/guide/ssr-nuxt.md'}
+          { text: 'SSR & Nuxt.js ( Experimental )', link: '/guide/ssr-nuxt.md' },
+          { text: 'Best Practices', link: '/guide/best-practices.md'}
         ]
       },
 
