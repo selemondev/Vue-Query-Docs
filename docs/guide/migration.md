@@ -239,7 +239,7 @@ To migrate just remove the usage of the custom DevTools component and install Vu
 
 ### Removed `additionalClients` option from `VueQueryPlugin`
 
-Separating cache in the application should be done with `queryKey`, not with creating multiple `QueryClients`. Therefore possibility to create multiple clients in one application was removed. In case you are using Vue2, which registers plugins globally instead of per-instance, you could use [custom context key](/guide/custom-client.md), to make sure that they will not clash.
+Separating cache in the application should be done with `queryKey`, not with creating multiple `QueryClients`. Therefore possibility to create multiple clients in one application was removed. In case you are using Vue2, which registers plugins globally instead of per-instance, you could use [custom context key](/guide/custom-clients.md), to make sure that they will not clash.
 
 ### Removed `nuxt` utilities in favor of using `VueQueryPlugin`
 
