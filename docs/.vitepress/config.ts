@@ -75,6 +75,9 @@ export default defineConfig({
           },
           {
             text: 'Suspense ( Experimental )', link: '/examples/suspense-experimental.md'
+          },
+          {
+            text: 'Vue 2.x ( Experimental )', link: '/examples/vue-2-experimental.md'
           }
         ]
       }
