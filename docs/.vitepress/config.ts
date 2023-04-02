@@ -78,6 +78,10 @@ export default defineConfig({
           },
           {
             text: 'Vue 2.x ( Experimental )', link: '/examples/vue-2-experimental.md'
+          },
+
+          {
+            text: 'Nuxt.js ( Experimental )', link: '/examples/nuxtjs-experimental.md'
           }
         ]
       }
