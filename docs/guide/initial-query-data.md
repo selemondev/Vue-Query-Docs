@@ -6,9 +6,9 @@ There are many ways to supply initial data for a query to the cache before you n
   - Provide `initialData` to a query to prepopulate its cache if empty
 
 - Imperatively:
-  - [Prefetch]() the data using `[queryClient.prefetchQuery]()`
+  - [Prefetch](/guide/prefetching.md) the data using `[queryClient.prefetchQuery]`
 
-  - [Manually]() place the data into the cache using `[queryClient.setQueryData]()`
+  - [Manually](/guide/prefetching.md) place the data into the cache using `[queryClient.setQueryData]`
 
 
 ## Using initialData to prepopulate a query

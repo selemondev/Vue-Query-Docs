@@ -41,7 +41,7 @@ useQuery(['todos', { type: 'done' }], ...)
 // queryKey === ['todos', { type: 'done' }]
 ```
 
-::: danger
+::: tip
 To ensure that your query key parameter can change over time within the same component, pass each query key parameter as a `ref` or `computed` value.
 :::
 

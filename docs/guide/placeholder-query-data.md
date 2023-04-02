@@ -17,7 +17,7 @@ There are a few ways to supply placeholder data for a query to the cache before 
   - Provide `placeholderData` to a query to prepopulate its cache if empty.
 
 - Imperatively:
-  - [Prefetch]() or fetch the data using `queryClient` and the `placeholderData` option.
+  - [Prefetch](/guide/prefetching.md) or fetch the data using `queryClient` and the `placeholderData` option.
 
 
 ## Placeholder data as a value

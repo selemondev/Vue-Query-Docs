@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Vue Query",
-  description: "Build responsive and accessible apps 10x faster",
+  description: "The Vue Query package provides hooks for fetching, caching and updating asynchronous data in Vue.",
   head: [
     [
       "link",
@@ -19,7 +19,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Guide', link: '/getting-started/overview.md' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/examples/simple.md' }
     ],
 
     sidebar: [
@@ -82,6 +82,10 @@ export default defineConfig({
 
           {
             text: 'Nuxt.js ( Experimental )', link: '/examples/nuxtjs-experimental.md'
+          },
+
+          {
+            text: 'Vite SSR ( Experimental )', link: '/examples/vite-ssr-experimental.md'
           }
         ]
       }
