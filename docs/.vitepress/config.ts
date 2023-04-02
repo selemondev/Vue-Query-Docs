@@ -16,11 +16,17 @@ export default defineConfig({
     ["meta", { property: "og:type", content: "website" }],
   ],
   themeConfig: {
+    logo: '/vue-query.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Guide', link: '/getting-started/overview.md' },
       { text: 'Examples', link: '/examples/simple.md' }
     ],
+
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2023-PRESENT Selemon Brahanu & Damian Osipiuk.",
+    },
 
     sidebar: [
       {
