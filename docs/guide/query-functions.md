@@ -57,11 +57,27 @@ function useTodos(status, page) {
 
 // Access the key, status and page variables in your query function!
 function fetchTodoList({ queryKey }) {
-  const status = queryKey[1].status;
-  const page = queryKey[1].page;
+  const [_key, { status, page }] = queryKey;
   return new Promise();
 }
 ```
+
+## QueryFunctionContext
+
+The `QueryFunctionContext` is the object passed to each query function. It consists of:
+
+- `queryKey`: `QueryKey`: [Query Keys](/guide/query-keys.md)
+
+- `pageParam`: `unknown` | `undefined`
+  - Only for [Infinite Queries](/guide/infinite-queries.md)
+  - The page parameter used to fetch the current page
+
+- `signal?`: AbortSignal
+   - [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) instance provided by react-query.
+   - Can be used for [Query Cancellation](/guide/query-cancellation.md)
+
+- `meta?`: `Record<string, unknown>`
+   - An optional field you can fill with additional information about your query
 
 ## Using a Query Object instead of parameters
 
