@@ -2,19 +2,19 @@
 
 At its core, Vue Query manages query caching for you based on query keys. Query keys can be as simple as a string, or as complex as an array of many strings and nested objects. As long as the query key is serializable, and `unique to the query's data`, you can use it!
 
-## String Only Query Keys
+## Simple Query Keys
 
-The simplest form of a key is actually not an array, but an individual string. When a string query key is passed, it is converted to an array internally with the string as the only item in the query key. This format is useful for:
+The simplest form of a key is an array with constants values. This format is useful for:
 
 - Generic list / Index resources.
 - Non-hierarchical resources
 
 ```js
 // A list of todos
-useQuery('todos', ...) // queryKey === ['todos']
+useQuery(['todos'], ...)
 
 // Something else, whatever!
-useQuery('somethingSpecial', ...) // queryKey === ['somethingSpecial']
+useQuery(['something', 'special'], ...)
 ```
 
 ## Array Keys
