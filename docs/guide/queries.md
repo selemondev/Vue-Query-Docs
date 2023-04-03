@@ -84,3 +84,29 @@ const { status, data, error } = useTodosQuery();
   </ul>
 </template>
 ```
+
+## FetchStatus
+
+In addition to the `status` property in the result object, you will also get an additional `fetchStatus` property with the following options:
+
+ - `fetchStatus === 'fetching'` - The query is currently fetching.
+
+- `fetchStatus === 'paused'` - The query wanted to fetch, but it is paused. Read more about this in the [Network Mode](/guide/network-mode.md) guide.
+
+- `fetchStatus === 'idle'` - The query is not doing anything at the moment.
+
+
+## Why two different states?
+
+Background refetches and stale-while-revalidate logic make all combinations for `status` and `fetchStatus` possible. For example:
+
+- A query in `success` status will usually be in `idle` fetchStatus, but it could also be in `fetching` if a background refetch is happening.
+
+- A query that mounts and has no data will usually be in `loading` status and `fetching` fetchStatus, but it could also be `paused` if there is no network connection.
+
+So keep in mind that a query can be in `loading` state without actually fetching data. As a rule of thumb:
+
+- The `status` gives information about the data - Do we have any data or not?
+
+- The `fetchStatus` gives information about the `queryFn` - Is it running or not?
+
