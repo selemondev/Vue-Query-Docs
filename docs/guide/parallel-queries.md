@@ -33,6 +33,5 @@ const usersQueriesOptions = computed(() => users.value.map(user => {
     }
   })
 );
-const userQueries = useQueries(usersQueriesOptions)
-
+const userQueries = useQueries({queries: usersQueriesOptions})
 ```
