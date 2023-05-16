@@ -86,7 +86,7 @@ For topics not covered in `vue-query docs` visit [react-query docs](https://reac
    });
    ```
 
-4. If you need to update options on your query dynamically, make sure to pass them as reactive variables
+4. If you need to update options on your query dynamically, make sure to pass them as reactive variables as shown below:
 
    ```ts
    const id = ref(1);
